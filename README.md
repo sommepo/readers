@@ -8,8 +8,8 @@ Four emulators have this reading layer, each in a repository of its own:
 
 | Reader | Console | Windows | Android | Games | Download |
 | --- | --- | --- | --- | --- | --- |
-| [PCSX2 Reader](https://github.com/sommepo/pcsx2-reader) | PS2 | ✓ | | [10](#ps2-pcsx2-reader-and-armsx2-reader) | [zip](https://github.com/sommepo/pcsx2-reader/releases/latest) |
-| [ARMSX2 Reader](https://github.com/sommepo/armsx2-reader) | PS2 | | ✓ | [10](#ps2-pcsx2-reader-and-armsx2-reader) | [APK](https://github.com/sommepo/armsx2-reader/releases/latest) |
+| [PCSX2 Reader](https://github.com/sommepo/pcsx2-reader) | PS2 | ✓ | | [11](#ps2-pcsx2-reader-and-armsx2-reader) | [zip](https://github.com/sommepo/pcsx2-reader/releases/latest) |
+| [ARMSX2 Reader](https://github.com/sommepo/armsx2-reader) | PS2 | | ✓ | [11](#ps2-pcsx2-reader-and-armsx2-reader) | [APK](https://github.com/sommepo/armsx2-reader/releases/latest) |
 | [PPSSPP Reader](https://github.com/sommepo/ppsspp-reader) | PSP | ✓ | ✓ | [5](#psp-ppsspp-reader) | [zip, APK](https://github.com/sommepo/ppsspp-reader/releases/latest) |
 | [Flycast Reader](https://github.com/sommepo/flycast-reader) | Dreamcast | ✓ | ✓ | [7](#dreamcast-flycast-reader) | [zip, APK](https://github.com/sommepo/flycast-reader/releases/latest) |
 
@@ -24,8 +24,20 @@ your own BIOS).
   screens (such as the AYN Thor) the lower screen is a trackpad for the cursor. Touching a
   word works too.
 
+The word looked up is **outlined, and the outline glides** from word to word as you move along
+the line (or highlighted, or not marked: a setting). The popup stands right next to the word and
+stays put on the way to its **+**, which is in the bottom left of each entry (or any corner you
+choose).
+
 Dictionaries are Yomitan's. Cards go to Anki (AnkiConnect on Windows, AnkiDroid on Android).
-Each app also has the console's own menu as its main screen and an optional CRT picture.
+Each app also has the console's own menu as its main screen and a CRT picture with a tube's
+frame around it.
+
+- **Play by touch** on a phone: a tap on the picture goes on, a tap on an answer picks it, and
+  the controller's buttons stand in a small column at the right edge that a tab tucks away (on
+  at first only on a device without controls of its own).
+- **A Steam Controller's back buttons** are the reader's on Windows: pause the game to look words
+  up, pause the statistics, make a card, open the backlog.
 
 ## Game scripts
 
@@ -58,12 +70,12 @@ new scripts are welcome, in the repository of the emulator the game runs in.
 
 <table>
   <tr>
-    <td width="50%"><img src="media/pcsx2/lookup-demo.gif" alt="Pointing at words in ひぐらしのなく頃に祭's text"><br><sub>Windows: point at a word</sub></td>
-    <td width="50%"><img src="media/armsx2/two-screens-demo.gif" alt="The lower screen moves the cursor over words in ドラゴンクエストV's text"><br><sub>Android, two screens: the lower one is a trackpad</sub></td>
+    <td width="50%"><img src="media/pcsx2/lookup-demo.gif" alt="Pointing at words in Never7's text, the outline gliding from word to word"><br><sub>Windows: point at a word</sub></td>
+    <td width="50%"><img src="media/armsx2/two-screens-demo.gif" alt="The lower screen moves the cursor over words in Never7's text"><br><sub>Android, two screens: the lower one is a trackpad</sub></td>
   </tr>
   <tr>
     <td><img src="media/pcsx2/lookup.jpg" alt="A dictionary popup over ひぐらしのなく頃に祭"><br><sub>A lookup on Windows</sub></td>
-    <td><img src="media/armsx2/one-screen-demo.gif" alt="Touching words in ドラゴンクエストV's text"><br><sub>Android, one screen: touch a word</sub></td>
+    <td><img src="media/armsx2/one-screen-demo.gif" alt="Touching words in Never7's text"><br><sub>Android, one screen: touch a word</sub></td>
   </tr>
   <tr>
     <td><img src="media/pcsx2/browser.png" alt="The PS2-style Browser on Windows"><br><sub>The PS2 Browser: a book marks a supported game</sub></td>
@@ -78,6 +90,7 @@ new scripts are welcome, in the repository of the emulator the game runs in.
 | Remember11 -the age of infinity- | SLPM-65550 | Story text, speakers, choices |
 | Never7 -the end of infinity- | SLPS-25256 | Story text, speakers, choices |
 | アマガミ | SLPS-25918 | Message window, furigana, choices |
+| CLANNAD | SLPM-66302 | Story text, speakers, choices; routes can be marked |
 | ドラゴンクエストV 天空の花嫁 | SLPM-65555 | Message window, speakers |
 | サイレントヒル2 | SLPM-65051 | Scene text and descriptions |
 | EVE burst error PLUS | SLPM-65320 | Message window |
